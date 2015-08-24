@@ -1,0 +1,11 @@
+*.py[co]
+
+bin
+lib
+include
+pip-selfcheck.json
+pyvenv.cfg
+
+__pycache__
+
+*.db
