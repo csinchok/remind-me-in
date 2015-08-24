@@ -252,7 +252,6 @@ def parse(tweet):
     if index > -1:
         when_slice = text[index + 12:]
     else:
-        print('no match: "{}"'.format(text))
         return
 
     for test_fn in [parse_numbers, parse_morning]:

@@ -64,7 +64,6 @@ def run():
         when = parse(tweet)
         if when:
             loop.call_at(when, remind)
-            print('remind: "{}" @ {}'.format(tweet['text'], when))
         since_id = max(since_id, twitter_id)
 
     while True:
@@ -83,7 +82,6 @@ def run():
             when = parse(tweet)
             if when:
                 loop.call_at(when, remind)
-                print('remind: "{}" @ {}'.format(tweet['text'], when))
 
             crawled_tweets[tweet['id']] = tweet
 

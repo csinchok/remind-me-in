@@ -7,4 +7,4 @@ ADD ./remindmein /app/remindmein
 
 WORKDIR "/app"
 
-CMD [ "python", "remindmein/app.py" ]
+CMD [ "python", "-m", "remindmein.app" ]
